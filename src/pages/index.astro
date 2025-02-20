@@ -6,53 +6,256 @@ import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 
-<MainLayout title="Titel">
-  <article>
-    <form method="post" class="[&>div]:py-4">
+<MainLayout title="Titel"
+  ><!-- herosection -->
+  <section class="grid">
+    <h1 class="uppercase">Digital Oprydningsdag</h1>
+    <p>- ryd op i dit digitale skrald!</p>
+    <h1 class="uppercase">15. marts 2025</h1>
+
+    <!-- <div class="">
+      <Image src={} alt="" class="" />
+      <img src="../" alt="" />
+    </div> -->
+  </section>
+
+  <section class="grid md:grid-cols-1 lg:mt-32">
+    <div class="p-8 grid content-center">
+      <h1 class="text-4xl uppercase font-bold pb-8">Digital Oprydningsdag</h1>
+      <p class="p-4 pr-10 text-m">- ryd op i dit digitale skrald!</p>
+      <!-- <Image src={} alt="" class="" /> -->
+      <img src="" alt="" />
+      <h1 class="text-4xl uppercase font-bold pb-8">15. marts 2025</h1>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-1 text-m">
+    <p>
+      Digital Oprydningsdag er en dag dedikeret til at rydde op i vores digitale
+      liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu
+      på sit femte år og organiseret af Let’s Do It World, har Digital
+      Oprydningsdag til formål at øge bevidstheden om digital forurening og
+      opfordre både enkeltpersoner og virksomheder til at rydde op og
+      omstrukturere deres online tilstedeværelse.
+    </p>
+  </section>
+
+  <h2 class="text-2xl uppercase font-bold pb-8">Digital Oprydningsdag</h2>
+  <section class="grid grid-cols-5">
+    <div class="border-2 border-solid">
+      <p>Hjælper med at reducere CO₂-udledning</p>
+    </div>
+    <div class="border-2 border-solid">
+      <p>Forlænger dine enheders levetid</p>
+    </div>
+    <div class="border-2 border-solid">
+      <p>Gør det hurtigere og lettere at dele og finde information</p>
+    </div>
+    <div class="border-2 border-solid">
+      <p>Reducerer sikkerhedsrisici ved datalagring</p>
+    </div>
+    <div class="border-2 border-solid">
+      <p>
+        Øger disk- og serverkapacitet, hvilket hjælper med at reducere
+        omkostninger
+      </p>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-2">
+    <img src="" alt="" />
+    <p>
+      Vær cool – giv ikke global opvarmning næring med digitalt affald! Skær ned
+      på dit CO₂-aftryk ved at deltage i Digital Oprydningsdag!
+    </p>
+  </section>
+
+  <h2 class="text-2xl uppercase font-bold pb-8">Digital Oprydningsdag</h2>
+  <section class="grid grid-cols-1">
+    <div class="border-t-2 border-b-2 border-black">
+      <p>
+        Det kræver mere energi at mine Bitcoin, end hele New Zealand forbruger
+        på et år! (a), (b)
+      </p>
+    </div>
+    <div class="border-t-2 border-b-2 border-black">
+      <p>
+        Internettet udleder mere end 900 millioner tons CO₂ hvert år! (a), (b),
+        (c), (d)
+      </p>
+    </div>
+    <div class="border-t-2 border-b-2 border-black">
+      <p>
+        90 % af al data tilgås aldrig igen tre måneder efter, den er lagret. (a)
+      </p>
+    </div>
+    <div class="border-t-2 border-b-2 border-black">
+      <p>
+        I 2007 blev der skabt én zettabyte data globalt. I 2010 var dette
+        fordoblet. I 2035 vil vi skabe mere end 2.000 zettabytes. For at printe
+        én zettabyte data ville der kræves papir fra 20 billioner træer – men
+        der findes kun ca. 3,5 billioner træer på jorden. (a), (b)
+      </p>
+    </div>
+    <div class="border-t-2 border-b-2 border-black">
+      <p>
+        Én e-mail udleder i gennemsnit 4 g CO₂ – det svarer til en elpære tændt
+        i 6 minutter! (a), (b), (c)
+      </p>
+    </div>
+    <div class="border-t-2 border-b-2 border-black">
+      <p>
+        I 2022 blev omkring 70 millioner servere brugt til at lagre data. Hver
+        af dem udledte 1–2 tons CO₂, og ca. 20 millioner endte som e-affald. (a)
+      </p>
+    </div>
+    <div class="border-t-2 border-b-2 border-black">
+      <p>99 % af al data er skabt inden for de sidste 10 år. (a)</p>
+    </div>
+    <div class="border-t-2 border-b-2 border-black">
+      <p>
+        Den ubegrænsede dataforbrug i dag kræver tre gange mere energi, end alle
+        verdens solpaneler kan producere! (a)
+      </p>
+    </div>
+    <div class="border-t-2 border-b-2 border-black">
+      <p>91 % af alle websider får ingen trafik fra Google. (a)</p>
+    </div>
+    <div class="border-t-2 border-b-2 border-black">
+      <p>
+        Hver dag sendes der 320 milliarder e-mails, og hvert år sendes der 62
+        billioner spam-e-mails – svarende til 20 millioner tons CO₂! (a), (b)
+      </p>
+    </div>
+    <p>
+      Kilder: (a) International Energy Agency, (b) “Bitcoin Tracking To Consume
+      More Energy Than NZ” – Energetics, (c) Powering the Internet: Your Virtual
+      Carbon Footprint – WebFX, (d) Energuide.be (e) Demandsage
+    </p>
+  </section>
+  <section>
+    <h2 class="text-2xl uppercase font-bold pb-8">Sådan deltager du:</h2>
+    <Link variant="primary" size="medium" href="#tilmelding">FOR INDIVIDER</Link
+    >
+  </section>
+
+  <h2 class="text-2xl uppercase font-bold pb-8">Digital Oprydningsdag i tal</h2>
+  <section class="grid grid-cols-3">
+    <div class="text-center">
+      <h3 class="text-4xl">1.184.747</h3>
+      <p>deltagere</p>
+    </div>
+    <div class="text-center">
+      <h3 class="text-4xl">14,5 mio. GB</h3>
+      <p>data slettet</p>
+    </div>
+    <div class="text-center">
+      <h3 class="text-4xl">3.625 tons</h3>
+      <p>CO₂-produktion forhindret årligt*</p>
+    </div>
+  </section>
+  <p>
+    Siden 2020 har 175 forskellige lande og territorier deltaget i Digital
+    Oprydningsdag. Næsten 1,2 millioner mennesker har slettet over 14,5
+    millioner GB data, hvilket har forhindret den årlige produktion af omkring
+    3.625 tons CO₂*.
+  </p>
+  <p>
+    *Ved beregning af digitalt affald anvender vi de globale gennemsnitlige
+    CO₂-udledningstal fra International Energy Agency. Ifølge disse forbruger 4
+    GB data, lagret på servere og andre datalagringsenheder i ét år, 2 kWh
+    energi og udleder 1 kg CO₂.
+  </p>
+
+  <h2 class="text-2xl uppercase font-bold pb-8">Digital Oprydningsdag i tal</h2>
+  <section class="grid grid-cols-2">
+    <div>
+      <img src="" alt="" />
+    </div>
+    <div>
+      <p>
+        Kampagnen "Digital Oprydningsdag 2024 – TikTok-kampagne", som er støttet
+        af The Minor Foundation for Major Challenges, blev udviklet med et klart
+        mål: at øge bevidstheden, styrke engagementet og bidrage til at reducere
+        CO₂-udledningen ved at nå en teenage-målgruppe gennem TikTok. Ved at
+        udnytte platformens unikke appel til den yngre generation har kampagnen
+        haft fokus på at oplyse om digitalt affald og hvordan individuelle
+        handlinger kan føre til konkrete miljøfordele. Kampagnen nåede sine
+        kerneformål, og tre TikTok-videoer blev skabt og delt på Let's Do It
+        Worlds sociale mediekanaler.
+      </p>
+      <p>
+        Se videoerne: Hvad er digitalt affald, Deltag i Digital Oprydningsdag,
+        Deltag i Digital Oprydningsdag
+      </p>
+      <p>
+        Vi takker The Minor Foundation for Major Challenges for at støtte dette
+        projekt!
+      </p>
+    </div>
+  </section>
+
+  <section id="tilmelding" class="max-w-lg mx-auto mt-32 p-4">
+    <h2 class="text-4xl font-bold pb-4">Tilmeld dig</h2>
+    <form class="space-y-4 grid grid-cols-1 gap-6">
       <div class="">
-        <label for="antal">Antal:</label>
-        <input type="number" id="antal" placeholder="1" />
+        <label for="nummer">Antal: </label>
+        <input type="number" id="nummer" value="1" min="0" max="100" />
       </div>
 
       <div class="">
         <span>Levering:</span>
-        <input type="radio" id="postnord" name="levering" />
-        <label for="postnord" checked="checked">PostNord</label>
+        <input type="radio" id="postdk" name="levering" checked="checked" />
+        <label for="postdk">PostDK</label>
         <input type="radio" id="afhent" name="levering" />
-        <label for="afhent">Afhent selv</label>
+        <label for="afhent">Afhent</label>
       </div>
 
-      <div class="">
+      <div class="grid gap-3">
         <label for="navn">Navn:</label>
-        <input type="text" id="navn" placeholder="Anders Andersen" />
+        <input type="text" id="navn" name="navn" placeholder="Anders And" />
       </div>
-
-      <div class="">
+      <div class="grid gap-3">
         <label for="adresse">Adresse:</label>
-        <input type="text" id="adresse" placeholder="Paradisæblevej 8" />
+        <input
+          type="text"
+          id="adresse"
+          name="adresse"
+          placeholder="Paradisæblevej 8"
+        />
       </div>
 
-      <div class="">
-        <label for="email">Email:</label>
-        <input type="text" id="adresse" placeholder="anders@andeby.com" />
+      <div class="grid gap-3 grid-cols-6">
+        <label for="postnummer" class="col-span-6">Postnummer & by:</label>
+        <input
+          type="text"
+          id="postnummer"
+          name="postnummer"
+          class="col-span-2"
+          placeholder="0900"
+        />
+        <input
+          type="text"
+          id="bynavn"
+          name="bynavn"
+          class="col-span-4"
+          placeholder="Andeby C"
+        />
       </div>
 
-      <div class="">
-        <label for="postnummer">Postnr. og By:</label>
-        <input type="text" id="postnummer" placeholder="0900" />
-        <input type="text" id="bynavn" placeholder="Frederiksberg" />
-      </div>
-
-      <div class="">
+      <div class="grid gap-3">
         <label for="telefon">Telefon:</label>
-        <input type="tel" id="telefon" placeholder="555-555" />
+        <input type="tel" id="telefon" name="telefon" placeholder="555-555" />
       </div>
 
       <div class="">
-        <input type="checkbox" />
-        <label for="checkbox">Ja tak til nyhedsbreve og tilbud</label>
+        <input type="checkbox" id="nyhedsbrev" name="nyhedsbrev" />
+        <label for="nyhedsbrev">Ja tak til nyhedsbreve og tilbud</label>
       </div>
-      <Button>Til Betaling</Button>
+
+      <div class="flex justify-end">
+        <Button variant="primary" size="medium">Til betaling</Button>
+      </div>
     </form>
-  </article>
+  </section>
 </MainLayout>
